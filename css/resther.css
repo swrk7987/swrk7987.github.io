@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+@import url('reset.css');
+
+body {background:#fff; /* background:#ffeaeb; */ color:#333;font-size:14px;}
+
+/* skip navi */
+.skip_navi{position:absolute;top:-100px;left:0;z-index:9999;width:100%;}
+.skip_navi a:hover,
+.skip_navi a:focus,
+.skip_navi a:active{display:block;position:absolute;top:100px;width:100%;padding:5px 0;background:#0057A2;font-weight:bold;color:#fff;text-align:center;}
+
+/* layout */
+header {width:100%;height:100px;background:#333;}
+header > .inner {overflow:hidden;width:1100px;margin:0 auto;}
+header > .inner > h1.logo {float:left;width:112px;margin:30px 100px 30px 0;color:#fcff00;font-family:Arial;font-size:28px;line-height:14px;}
+header > .inner > h1.logo > span {/* color:#fff; */font-size:12px;letter-spacing:-0.02px;}
+#gnb {float:left;margin:43px 0 0;}
+#gnb li {display:inline-block;margin-right:10px;}
+#gnb li a {color:#fff;font-family:Arial;font-size:20px;font-weight:bold;text-decoration:none;}
+
+div#cont {width:100%;/* background:#ffeaeb; */}
+div#cont h2.tit {margin-bottom:30px;color:#333;font-family:Arial;font-size:28px;font-weight:600;}
+div#cont .cont_inner {width:1100px;margin:0 auto;padding:30px 0;}
+div#cont .cont_inner .cont {overflow:hidden;}
+
+footer {width:100%;padding:30px 0;background:#333;color:#fff;}
+footer .copyright {width:1100px;margin:0 auto;font-family:Arial;}
+
+/* About Me */
+#am {width:100%;}
+#am .img_area {float:left;width:372px;margin-right:20px;}
+#am .img_area img {padding:5px;border:1px solid #ddd;border-radius:4px;} 
+#am .profile_area {float:left;width:708px;}
+#am .profile_area  p.txt {margin-top:10px;font-family:'Nanum Gothic';line-height:1.4;}
+#am .profile_area  p.txt + p.txt {padding-top:10px;border-top:1px dashed #d4d4d4;}
+#am .profile_area  p.txt span.t_d_underline {text-decoration:underline;}
+#am .profile_area  table {width:100%;margin-top:30px;border:1px solid #d4d4d4;}
+#am .profile_area  table > caption {display:none;}
+#am .profile_area  table tbody th {padding:8px;background:#f4f4f4;border-top:1px dashed #d4d4d4;color:#333;font-family:'Nanum Gothic';font-weight:bold;text-align:left;vertical-align:middle;}
+#am .profile_area  table tbody td {padding:8px;border-top:1px dashed #d4d4d4;font-family:'Nanum Gothic';}
+#am .profile_area  table tbody td > a {color:#333;text-decoration:none;}
+#am .profile_area  table tbody td > a:hover {color:#333;text-decoration:underline;}
+#am .profile_area  table tbody td ul.sns li {display:inline-block;width:24px;height:24px;}
+#am .profile_area  table tbody td ul.sns li a {display:inline-block;width:24px;height:24px;text-indent:-9999px;}
+#am .profile_area  table tbody td ul.sns li.fb {background:url(https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/facebook_circle-24.png) no-repeat top left;}
+#am .profile_area  table tbody td ul.sns li.insta {background:url(https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/instagram_circle-24.png) no-repeat top left;}
+#am .profile_area  table tbody td ul.skill li {padding-left:20px;background:url(https://cdn0.iconfinder.com/data/icons/elysium-icons/24/Tick.png) no-repeat left 5px;background-size:12px 12px;line-height:1.4;}
+#am .profile_area  table tbody td ul.skill li + li {margin-top:5px;}
+
+/* Portfolio */
+#pf {width:100%;background:#f4f4f4;font-family:'Nanum Gothic';color:#333;}
+#pf .tit_area {overflow:hidden;}
+#pf .tit_area h2.tit {float:left;display:inline-block;margin-right:50px;color:#333;}
+#pf .tit_area > p {float:left;display:inline-block;padding-top:10px;}
+#pf .cont_inner h3.sub_tit {margin-bottom:20px;padding-left:80px;background:url(https://cdn4.iconfinder.com/data/icons/ballicons-2-free/100/laptop-64.png) no-repeat left center;font-family:Arial;font-size:20px;font-weight:600;line-height:64px;}
+#pf .cont_inner h3.sub_tit > span {margin-left:10px;font-family:'Nanum Gothic';font-size:16px;}
+#pf .pf_area + h3.sub_tit {margin-top:40px;}
+/* #pf .pf_list {overflow:hidden;}
+#pf .pf_list + .pf_list {margin-top:6px;}
+#pf .pf_list > li {float:left;width:270px;background:#ffeaeb;}
+#pf .pf_list > li > .pf_img {width:270px;height:140px;padding:20px 0;background:#fff;text-align:center;}
+#pf .pf_list > li > .pf_cont {min-height:148px;padding:10px;color:#333;}
+#pf .pf_list > li > .pf_cont > li {padding-left:10px;background:url(https://cdn2.iconfinder.com/data/icons/lullacons/bullet-arrow-right.png) no-repeat left 3px;font-size:12px;line-height:1.5;}
+#pf .pf_list > li > .pf_cont > li > a {color:#333;text-decoration:none;}
+#pf .pf_list > li > .pf_cont > li > a:hover {color:#333;text-decoration:underline;}
+#pf .pf_list > li + li {margin-left:6px;} */
+#pf .pf_list {overflow:hidden;/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */}
+#pf .pf_list + .pf_list {margin-top:15px;}
+#pf .pf_list > li {overflow:hidden;width:830px;padding-left:270px;background:#fff;}
+#pf .pf_list > li > .pf_img {float:left;width:270px;padding:10px 0;background:#fff;text-align:center;vertical-align:middle;}
+#pf .pf_list > li > .pf_cont {float:left;width:810px;padding:20px 10px;color:#333;}
+#pf .pf_list > li > .pf_cont > li {padding-left:12px;background:url(https://cdn2.iconfinder.com/data/icons/lullacons/bullet-arrow-right.png) no-repeat left 6px;font-size:14px;line-height:1.7;}
+#pf .pf_list > li > .pf_cont > li > ul > li {padding-left:12px;background:url(/resther/images/bul_dash.gif) no-repeat left 10px;}
+#pf .pf_list > li > .pf_cont > li > a,  #pf .pf_list > li > .pf_cont > li > ul > li > a{color:#333;text-decoration:none;}
+#pf .pf_list > li > .pf_cont > li > a:hover,  #pf .pf_list > li > .pf_cont > li > ul > li > a:hover {color:#333;text-decoration:underline;}
+#pf .pf_list > li + li {border-top:1px solid #d4d4d4;}
+#pf .pf_list > li.n01 {background:#fff url(/resther/images/pf/logo_smefn.gif) no-repeat left center;}
+#pf .pf_list > li.n02 {background:#fff url(/resther/images/pf/img_m_smefn.jpg) no-repeat left center;}
+#pf .pf_list > li.n03 {background:#fff url(/resther/images/pf/img_smefn.jpg) no-repeat left center;}
+#pf .pf_list > li.n04 {background:#fff url(/resther/images/pf/img_kofc_re.jpg) no-repeat left center;}
+#pf .pf_list > li.n05 {background:#fff url(/resther/images/pf/img_kofc_recr.jpg) no-repeat left center;}
+#pf .pf_list > li.n06 {background:#fff url(/resther/images/pf/img_bodykey.jpg) no-repeat left center;}
+#pf .pf_list > li.n07 {background:#fff url(/resther/images/pf/img_castingbox.jpg) no-repeat left center;}
+#pf .pf_list > li.n08 {background:#fff url(/resther/images/pf/img_hanstay.jpg) no-repeat left center;}
+#pf .pf_list > li.n09 {background:#fff url(/resther/images/pf/img_sh_photo.jpg) no-repeat left center;}
+#pf .pf_list > li.n10 {background:#fff url(/resther/images/pf/img_smartunder.jpg) no-repeat left center;}
+#pf .pf_list > li.n11 {background:#fff url(/resther/images/pf/img_sh_bkms.jpg) no-repeat left center;}
+#pf .pf_list > li.n12 {background:#fff url(/resther/images/pf/img_adt.jpg) no-repeat left center;}
+
+#pf .pf_list > li.tb01 {background:#fff url(/resther/images/pf/img_tb_passport.jpg) no-repeat left center;}
+#pf .pf_list > li.tb02 {background:#fff url(/resther/images/pf/img_tb_pr_view.jpg) no-repeat left center;}
+#pf .pf_list > li.tb03 {background:#fff url(/resther/images/pf/img_only7.jpg) no-repeat left center;}
+#pf .pf_list > li.tb04 {background:#fff url(/resther/images/pf/img_tb_person.jpg) no-repeat left center;}
+#pf .pf_list > li.tb05 {background:#fff url(/resther/images/pf/logo_tb.gif) no-repeat left center;}
+#pf .pf_list > li.tb06 {background:#fff url(/resther/images/pf/img_tb_santiago.jpg) no-repeat left center;}
+#pf .pf_list > li.tb07 {background:#fff url(/resther/images/pf/logo_tb.gif) no-repeat left center;}
+
+#pf .pf_list > li.c01 {background:#fff url(/resther/images/pf/logo_cgntv.png) no-repeat 80px 50%;}
+#pf .pf_list > li.c02 {background:#fff url(/resther/images/pf/img_cgn_player.gif) no-repeat left center;}
+#pf .pf_list > li.c03 {background:#fff url(/resther/images/pf/img_cgn_main.gif) no-repeat left center;}
+#pf .pf_list > li.c04 {background:#fff url(/resther/images/pf/img_cgn_donation.gif) no-repeat left center;}
+#pf .pf_list > li.c05 {background:#fff url(/resther/images/pf/img_cgn_search.gif) no-repeat left center;}
+#pf .pf_list > li.c06 {background:#fff url(/resther/images/pf/logo_cgntv.png) no-repeat 80px 50%;}
+
+/* #pf .pf_list > li.hm01 {background:#fff url(/resther/images/pf/img_ivoice.jpg) no-repeat left center;}
+#pf .pf_list > li.hm02 {background:#fff url(/resther/images/pf/img_bonwave.jpg) no-repeat left center;} */
+
+
+/* common */
+.p25_10 {padding:25px 10px;}
+.p30_10 {padding:30px 10px;}
